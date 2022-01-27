@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GU_PlayerController.cs" />
+    <Compile Include="Assets\Scripts\GU_Box.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UI\FantasyGUI\png\README.txt" />
