@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEditor;
 
 public class GU_PlayerController : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class GU_PlayerController : MonoBehaviour
     public Collider minhaColisao;
     bool taDemitido;
     [SerializeField] GameObject caixaDemissao;
+
+    //Personagens
+    [SerializeField] GameObject[] personagens;
+    public int playerNumber;
 
     private void Awake()
     {
@@ -148,6 +153,66 @@ public class GU_PlayerController : MonoBehaviour
     {
         velocidadeMovimento = 10;
         corpo.velocity = movimento * velocidadeMovimento;
+    }
+
+    public void SetPlayer(int playerNumber)
+    {
+        switch (playerNumber)
+        {
+            case 8:
+                Debug.Log("Número 8");
+                break;
+            case 7:
+                Debug.Log("Número 7");
+                break;
+            case 6:
+                Debug.Log("Número 6");
+                break;
+            case 5:
+                Debug.Log("Número 5");
+                break;
+            case 4:
+                Debug.Log("Número 4");
+                break;
+            case 3:
+                Debug.Log("Número 3");
+                break;
+            case 2:
+                Debug.Log("Número 2");
+                break;
+            case 1:
+                GameObject newObject1 = Instantiate(personagens[1]);
+                newObject1.name = personagens[1].name;
+                Undo.RegisterCreatedObjectUndo(newObject1, "Replace With Prefabs");
+                newObject1.transform.parent = this.transform.parent;
+                newObject1.transform.localPosition = this.transform.localPosition;
+                newObject1.transform.localRotation = this.transform.localRotation;
+                newObject1.transform.localScale = this.transform.localScale;
+                newObject1.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
+                eu = newObject1.GetComponent<GU_PlayerController>();
+                Undo.DestroyObjectImmediate(this);
+                Debug.Log("Número 1");
+                break;
+            case 0:
+                GameObject newObject0 = Instantiate(personagens[0]);
+                newObject0.name = personagens[0].name;
+                Undo.RegisterCreatedObjectUndo(newObject0, "Replace With Prefabs");
+                newObject0.transform.parent = this.transform.parent;
+                newObject0.transform.localPosition = this.transform.localPosition;
+                newObject0.transform.localRotation = this.transform.localRotation;
+                newObject0.transform.localScale = this.transform.localScale;
+                newObject0.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
+                eu = newObject0.GetComponent<GU_PlayerController>();
+                Undo.DestroyObjectImmediate(this);        
+                //GU_PlayerController temp = Instantiate(personagens[0], transform.position, transform.rotation).GetComponent<GU_PlayerController>();
+                //eu = temp;
+                //this.gameObject = personagens[0];
+                Debug.Log("Número 0");
+                break;
+            default:
+                Debug.Log("Colocar o que não tem");
+                break;
+        }
     }
 }
 
