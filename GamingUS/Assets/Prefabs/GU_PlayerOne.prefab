@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3059772091154189403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76089, y: -1.083368, z: -142.53014}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3059772089726696508}
@@ -263,13 +263,3 @@ MonoBehaviour:
     m_Flags: 0
   minhaColisao: {fileID: 3059772091154189399}
   caixaDemissao: {fileID: 7486156237455208963, guid: 116f4f2a601adf84d9b4ed03bcec83fd, type: 3}
-  personagens:
-  - {fileID: 791344997901170017, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
-  - {fileID: 3059772091154189403}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}

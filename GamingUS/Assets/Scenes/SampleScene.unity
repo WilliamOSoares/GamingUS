@@ -357,6 +357,10 @@ PrefabInstance:
       value: GU_Player (1)
       objectReference: {fileID: 0}
     - target: {fileID: 791344998257320928, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
+      propertyPath: impostor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 791344998257320928, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
       propertyPath: noControle
       value: 0
       objectReference: {fileID: 0}
@@ -484,11 +488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 791344998257320928, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
       propertyPath: impostor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 791344998257320928, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
       propertyPath: noControle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
