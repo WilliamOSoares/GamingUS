@@ -182,8 +182,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8c3c98c13b095744fb9d76d4b51f9d1e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -532,9 +532,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -611,8 +611,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: be999db37701065429367fa40bd3468e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -665,9 +665,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -821,8 +821,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7449875914324612112, guid: 383a4a7d03cbe24479a47d37c09ce5bd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -875,9 +875,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1033,8 +1033,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8403378990599238771, guid: b51cdc7700f52114697c242a224dc0ee, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1087,9 +1087,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1245,8 +1245,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e460e109564d23d40bb3f58e5be157fa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1299,9 +1299,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1773,8 +1773,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8207251634641229221, guid: 1b2617cd282f63041b82f0032e2d7865, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1827,9 +1827,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2039,9 +2039,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2197,8 +2197,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -3382374741780746665, guid: e879cbc4661368e4f986162a088d1156, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2251,9 +2251,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2794656286616689084}
-        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
-        m_MethodName: setPlayer
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GU_GameController, Assembly-CSharp
+        m_MethodName: SetPlayer
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2462,4 +2462,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5412615112021175419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2794656286616689084}
+        m_TargetAssemblyTypeName: GU_CharacterSelection, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
