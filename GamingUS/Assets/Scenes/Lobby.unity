@@ -572,6 +572,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[2]
+      value: 
+      objectReference: {fileID: 1941169700042577845, guid: a41963bcde18627438391dae9a1dcbbf, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[3]
+      value: 
+      objectReference: {fileID: 4009443039005517610, guid: 72dd62233fe2eb4488f1ce45003027ad, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[4]
+      value: 
+      objectReference: {fileID: 6537300878181547421, guid: 934fdcd13c616754d9c2965844610e4c, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[5]
+      value: 
+      objectReference: {fileID: 644127609461665310, guid: da1387ff26d24654587826cc0e21f05d, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[6]
+      value: 
+      objectReference: {fileID: 7835102271485484677, guid: f221a5380bb40114b92c214ee07ee248, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[7]
+      value: 
+      objectReference: {fileID: 4509812604242563352, guid: 1a865a9d87e0fe94797d5d0353513fc3, type: 3}
+    - target: {fileID: 2492131476368438545, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
+      propertyPath: personagens.Array.data[8]
+      value: 
+      objectReference: {fileID: 3523377668783103378, guid: b339498d4dd71ea498829ccb8085a049, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68b6c9d66814fb1499624dce218771ee, type: 3}
 --- !u!1001 &2794656288678226103
@@ -581,6 +613,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1392203761027220632, guid: af3d7f30922dd604fa8d00094fe7d4f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -580
+      objectReference: {fileID: 0}
     - target: {fileID: 2794656286616689073, guid: af3d7f30922dd604fa8d00094fe7d4f0, type: 3}
       propertyPath: m_Name
       value: Menu_Personagem
@@ -681,6 +717,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1117354800}
+    - target: {fileID: 2794656287005122635, guid: af3d7f30922dd604fa8d00094fe7d4f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 435
+      objectReference: {fileID: 0}
     - target: {fileID: 2794656287197080388, guid: af3d7f30922dd604fa8d00094fe7d4f0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

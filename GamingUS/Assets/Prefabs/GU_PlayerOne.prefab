@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3059772089726696508}
   - component: {fileID: 3059772089726696509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 3059772091154189398}
   - component: {fileID: 3059772091154189397}
   - component: {fileID: 3059772091154189396}
-  m_Layer: 0
+  - component: {fileID: 4713047989260017140}
+  m_Layer: 6
   m_Name: GU_PlayerOne
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -263,3 +264,27 @@ MonoBehaviour:
     m_Flags: 0
   minhaColisao: {fileID: 3059772091154189399}
   caixaDemissao: {fileID: 7486156237455208963, guid: 116f4f2a601adf84d9b4ed03bcec83fd, type: 3}
+--- !u!114 &4713047989260017140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059772091154189403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e22047aed76214f9d60892ff0c2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreMe:
+    serializedVersion: 2
+    m_Bits: 64
+  getRadius: 20
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 128
+  sceneObjects: []
+  lightRays: {fileID: 7821465228601258934, guid: 372f44fdd5708984ea31cc63d40a225b, type: 3}
+  offset: 0.05
+  showRed: 0
+  showGreen: 0

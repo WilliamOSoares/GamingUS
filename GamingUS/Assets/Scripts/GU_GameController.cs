@@ -55,25 +55,60 @@ public class GU_GameController : MonoBehaviour
         switch (playerNumber)
         {
             case 8:
-                Debug.Log("Número 8");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[8]);
+                nPlayer = 8;
                 break;
             case 7:
-                Debug.Log("Número 7");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[7]);
+                nPlayer = 7;
                 break;
             case 6:
-                Debug.Log("Número 6");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[6]);
+                nPlayer = 6;
                 break;
             case 5:
-                Debug.Log("Número 5");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[5]);
+                nPlayer = 5;
                 break;
             case 4:
-                Debug.Log("Número 4");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[4]);
+                nPlayer = 4;
                 break;
             case 3:
-                Debug.Log("Número 3");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[3]);
+                nPlayer = 3;
                 break;
             case 2:
-                Debug.Log("Número 2");
+                if (naCena != null)
+                {
+                    Object.DestroyImmediate(naCena);
+                }
+                naCena = Instantiate(personagens[2]);
+                nPlayer = 2;
                 break;
             case 1:
                 if (naCena != null)
@@ -82,7 +117,6 @@ public class GU_GameController : MonoBehaviour
                 }
                 naCena = Instantiate(personagens[1]);
                 nPlayer = 1;
-                Debug.Log("Número 1");
                 break;
             case 0:
                 if (naCena != null)
@@ -91,7 +125,6 @@ public class GU_GameController : MonoBehaviour
                 }
                 naCena = Instantiate(personagens[0]);
                 nPlayer = 0;
-                Debug.Log("Número 0");
                 break;
             default:
                 Debug.Log("Colocar o que não tem");
