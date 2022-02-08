@@ -15,4 +15,20 @@ public class GU_Box : MonoBehaviour
     {
         
     }
+
+    private void OnEnable()
+    {
+        if (GU_PlayerController.caixas != null)
+        {
+            GU_PlayerController.caixas.Add(transform);
+        }
+    }
+
+    public void Report()
+    {
+        Debug.Log("Reportado");
+        Destroy(gameObject);
+    }
+
+
 }

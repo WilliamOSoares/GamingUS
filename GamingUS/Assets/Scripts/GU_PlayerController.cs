@@ -29,21 +29,30 @@ public class GU_PlayerController : MonoBehaviour
     bool taDemitido;
     [SerializeField] GameObject caixaDemissao;
 
+    public static List<Transform> caixas;
+    List<Transform> caixasEncontr;
+
+    [SerializeField] InputAction report;
+    [SerializeField] LayerMask ignoreCaixa;
+
     private void Awake()
     {
         demitir.performed += demitirAlvo;
+        report.performed += reportCaixa;
     }
 
     private void OnEnable()
     {
         wasd.Enable();
         demitir.Enable();
+        report.Enable();
     }
 
     private void OnDisable()
     {
         wasd.Disable();
         demitir.Disable();
+        report.Disable();
     }
 
     public void SetRole(bool newRole)
@@ -127,6 +136,8 @@ public class GU_PlayerController : MonoBehaviour
         {
             return;
         }
+        caixas = new List<Transform>();
+        caixasEncontr = new List<Transform>();
     }
 
     // Update is called once per frame
@@ -143,6 +154,48 @@ public class GU_PlayerController : MonoBehaviour
             avatar.localScale = new Vector2(Mathf.Sign(movimento.x), 1);
         }
         anim.SetFloat("Speed",movimento.magnitude);
+
+        if (caixas.Count>0)
+        {
+            procuraCaixa();
+        }
+    }
+
+    void procuraCaixa()
+    {
+        foreach (Transform caixa in caixas)
+        {
+            RaycastHit hit;
+            Ray ray = new Ray(transform.position, caixa.position - transform.position);
+            Debug.DrawRay(transform.position, caixa.position - transform.position, Color.cyan);
+            if (Physics.Raycast(ray, out hit, 1000f,~ignoreCaixa))
+            {
+                if (hit.transform == caixa)
+                {
+                    //Debug.Log(hit.transform.name);
+                    //Debug.Log(caixasEncontr.Count);
+                    if (caixasEncontr.Contains(caixa.transform))
+                        return;
+                    caixasEncontr.Add(caixa.transform);
+                }
+                else
+                {
+                    caixasEncontr.Remove(caixa.transform);
+                }
+            }
+        }
+    }
+
+    private void reportCaixa(InputAction.CallbackContext obj)
+    {
+        if (caixasEncontr == null)
+            return;
+        if (caixasEncontr.Count == 0)
+            return;
+        Transform tempCaixa = caixasEncontr[caixasEncontr.Count - 1];
+        caixas.Remove(tempCaixa);
+        caixasEncontr.Remove(tempCaixa);
+        tempCaixa.GetComponent<GU_Box>().Report();
     }
 
     private void FixedUpdate()

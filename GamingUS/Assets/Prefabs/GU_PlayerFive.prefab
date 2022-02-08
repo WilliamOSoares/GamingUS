@@ -182,6 +182,26 @@ MonoBehaviour:
     m_Flags: 0
   minhaColisao: {fileID: 644127609461665378}
   caixaDemissao: {fileID: 7486156237455208963, guid: 116f4f2a601adf84d9b4ed03bcec83fd, type: 3}
+  report:
+    m_Name: Report
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a7ffc02f-62c7-4886-9632-3a26ca2b8e54
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 668ed44d-59a1-4fbb-89ad-9801a0212fde
+      m_Path: <Keyboard>/r
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Report
+      m_Flags: 0
+    m_Flags: 0
+  ignoreCaixa:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &-8480873990883363104
 MonoBehaviour:
   m_ObjectHideFlags: 0
