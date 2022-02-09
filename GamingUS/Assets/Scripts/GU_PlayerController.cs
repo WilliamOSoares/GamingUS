@@ -117,6 +117,7 @@ public class GU_PlayerController : MonoBehaviour
         taDemitido = true;
         anim.SetBool("isDead", taDemitido);
         minhaColisao.enabled = false;
+        gameObject.layer = 8;
 
         GU_Box caixaTemp = Instantiate(caixaDemissao,transform.position, transform.rotation).GetComponent<GU_Box>();
     }

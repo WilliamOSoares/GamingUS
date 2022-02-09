@@ -72,9 +72,9 @@ public class lightcaster : MonoBehaviour
 	void Update()
     {
         GetWalls();
-		mesh.Clear(); //clears the mesh before changing it.
+        mesh.Clear(); //clears the mesh before changing it.
 
-        // The next few lines create an array to store all vertices of all the scene objects that should react to the light.
+        // The next few lines create an array to store all vertices of all the scene objects that should react to the light.        
 		Vector3[] objverts = sceneObjects[0].GetComponent<MeshFilter>().mesh.vertices;
         for (int i = 1; i < sceneObjects.Length; i++)
         {
