@@ -402,6 +402,43 @@ MonoBehaviour:
   ignoreCaixa:
     serializedVersion: 2
     m_Bits: 256
+  mouse:
+    m_Name: Mouse
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: fbb66a3a-10eb-4b1d-b312-45e7a4fc2f82
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: b184543a-d48e-460c-8fc8-323e5ebfa7f9
+      m_Path: <Mouse>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse
+      m_Flags: 0
+    m_Flags: 0
+  interacao:
+    m_Name: Interacao
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 30fa4ab2-dcb2-4c65-bbae-0d0c09561fe3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4708305a-ab68-41d9-9822-7b77a1d2f1c0
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interacao
+      m_Flags: 0
+    m_Flags: 0
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &6724873614114304908
 GameObject:
   m_ObjectHideFlags: 0

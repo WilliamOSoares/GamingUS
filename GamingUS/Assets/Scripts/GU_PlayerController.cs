@@ -35,10 +35,18 @@ public class GU_PlayerController : MonoBehaviour
     [SerializeField] InputAction report;
     [SerializeField] LayerMask ignoreCaixa;
 
+    //Interacao
+    [SerializeField] InputAction mouse;
+    Vector2 mousePositionInput;
+    Camera myCamera;
+    [SerializeField] InputAction interacao;
+    [SerializeField] LayerMask interactLayer;
+
     private void Awake()
     {
         demitir.performed += demitirAlvo;
         report.performed += reportCaixa;
+        interacao.performed += interacoes;
     }
 
     private void OnEnable()
@@ -46,6 +54,8 @@ public class GU_PlayerController : MonoBehaviour
         wasd.Enable();
         demitir.Enable();
         report.Enable();
+        mouse.Enable();
+        interacao.Enable();
     }
 
     private void OnDisable()
@@ -53,6 +63,8 @@ public class GU_PlayerController : MonoBehaviour
         wasd.Disable();
         demitir.Disable();
         report.Disable();
+        mouse.Disable();
+        interacao.Disable();
     }
 
     public void SetRole(bool newRole)
@@ -160,6 +172,8 @@ public class GU_PlayerController : MonoBehaviour
         {
             procuraCaixa();
         }
+
+        mousePositionInput = mouse.ReadValue<Vector2>();
     }
 
     void procuraCaixa()
@@ -203,6 +217,28 @@ public class GU_PlayerController : MonoBehaviour
     {
         velocidadeMovimento = 10;
         corpo.velocity = movimento * velocidadeMovimento;
+    }
+
+    void interacoes(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+        {
+            //Debug.Log("Aqui");
+            RaycastHit hit;
+            Ray ray = myCamera.ScreenPointToRay(mousePositionInput);
+            if (Physics.Raycast(ray, out hit, interactLayer))
+            {
+                if (hit.transform.tag == "Interactable")
+                {
+                    if (hit.transform.GetChild(0).gameObject.activeInHierarchy)
+                    {
+                        return;
+                    }
+                    GU_Interactable temp = hit.transform.GetComponent<GU_Interactable>();
+                    temp.PlayMiniGame();
+                }
+            }
+        }
     }
 }
 
