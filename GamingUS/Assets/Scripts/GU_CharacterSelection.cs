@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class GU_CharacterSelection : MonoBehaviour
 {
     [SerializeField] int playerNumber;
+    [SerializeField] GameObject panel;
 
     public void setPlayer(int playerNumber)
     {
-        GU_GameController.Instancia.SetPlayer(playerNumber);
+        GU_GameController.Instancia.SetPlayer(playerNumber);        
     }
 
     public void NextScene(int sceneIndex)
@@ -22,5 +23,9 @@ public class GU_CharacterSelection : MonoBehaviour
         {
             SceneManager.LoadScene(sceneIndex);
         }
+    }
+    public void ClosePanel()
+    {
+        panel.SetActive(false);
     }
 }

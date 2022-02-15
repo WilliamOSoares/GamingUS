@@ -43,7 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cccfdff9b764dd4994b5b83fafcada0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelPersonagem: {fileID: 0}
   personagens:
   - {fileID: 791344997901170017, guid: 8d97425af1d50a045a8519a9422d8cf9, type: 3}
   - {fileID: 3059772091154189403, guid: ec4e20343180b5141a89e1e41457b315, type: 3}
+  - {fileID: 1941169700042577845, guid: a41963bcde18627438391dae9a1dcbbf, type: 3}
+  - {fileID: 4009443039005517610, guid: 72dd62233fe2eb4488f1ce45003027ad, type: 3}
+  - {fileID: 6537300878181547421, guid: 934fdcd13c616754d9c2965844610e4c, type: 3}
+  - {fileID: 644127609461665310, guid: da1387ff26d24654587826cc0e21f05d, type: 3}
+  - {fileID: 7835102271485484677, guid: f221a5380bb40114b92c214ee07ee248, type: 3}
+  - {fileID: 4509812604242563352, guid: 1a865a9d87e0fe94797d5d0353513fc3, type: 3}
+  - {fileID: 3523377668783103378, guid: b339498d4dd71ea498829ccb8085a049, type: 3}
   naCena: {fileID: 0}

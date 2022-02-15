@@ -141,6 +141,7 @@ public class GU_PlayerController : MonoBehaviour
         {
             eu = this;
         }
+        myCamera = transform.GetChild(1).GetComponent<Camera>();
         alvos = new List<GU_PlayerController>();
         corpo = GetComponent<Rigidbody>();
         avatar = transform.GetChild(0);
@@ -230,7 +231,8 @@ public class GU_PlayerController : MonoBehaviour
             {
                 if (hit.transform.tag == "Interactable")
                 {
-                    if (hit.transform.GetChild(0).gameObject.activeInHierarchy)
+                    Debug.Log(hit.transform.GetChild(0).gameObject.activeInHierarchy);
+                    if (!hit.transform.GetChild(0).gameObject.activeInHierarchy)
                     {
                         return;
                     }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GU_GameController : MonoBehaviour
 {
+    [SerializeField] GameObject panelPersonagem;
     private static GU_GameController _instancia;
     public static GU_GameController Instancia
     {
@@ -61,6 +62,7 @@ public class GU_GameController : MonoBehaviour
                 }
                 naCena = Instantiate(personagens[8]);
                 nPlayer = 8;
+                panelPersonagem.SetActive(false);
                 break;
             case 7:
                 if (naCena != null)
@@ -68,6 +70,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[7]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 7;
                 break;
             case 6:
@@ -76,6 +79,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[6]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 6;
                 break;
             case 5:
@@ -84,6 +88,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[5]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 5;
                 break;
             case 4:
@@ -92,6 +97,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[4]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 4;
                 break;
             case 3:
@@ -100,6 +106,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[3]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 3;
                 break;
             case 2:
@@ -108,6 +115,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[2]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 2;
                 break;
             case 1:
@@ -116,6 +124,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[1]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 1;
                 break;
             case 0:
@@ -124,6 +133,7 @@ public class GU_GameController : MonoBehaviour
                     Object.DestroyImmediate(naCena);
                 }
                 naCena = Instantiate(personagens[0]);
+                panelPersonagem.SetActive(false);
                 nPlayer = 0;
                 break;
             default:
