@@ -217,7 +217,7 @@ public class GU_PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         velocidadeMovimento = 10;
-        corpo.velocity = movimento * velocidadeMovimento;
+        corpo.velocity = movimento * velocidadeMovimento*5;
     }
 
     void interacoes(InputAction.CallbackContext context)
